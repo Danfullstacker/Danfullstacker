@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h2 class="logo">Danfullstacker.dev</h2>
+            <div class="nav-links">
+                <a href="#tools">Tools</a>
+                <a href="#projects">Projects</a>
+                <a href="#hire">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>I Build <span class="highlight">Solutions</span></h1>
+            <p>Full-Stack Developer creating tools that solve real problems</p>
+            <button class="cta-button" onclick="scrollToSection('tools')">See My Tools</button>
+        </div>
+    </header>
+
+    <section id="tools" class="tools-section">
+        <h2>Developer Tools</h2>
+        <div class="tools-grid">
+            
+            <!-- URL Shortener Tool -->
+            <div class="tool-card">
+                <h3>URL Shortener</h3>
+                <p>Create short links instantly</p>
+                <div class="tool-interface">
+                    <input type="text" id="longUrl" placeholder="Paste your long URL here">
+                    <button onclick="shortenUrl()">Shorten URL</button>
+                    <div id="shortUrlResult"></div>
+                </div>
+            </div>
+
+            <!-- Markdown Editor -->
+            <div class="tool-card">
+                <h3>Markdown Editor</h3>
+                <p>Write and preview markdown in real-time</p>
+                <div class="tool-interface">
+                    <textarea id="markdownInput" placeholder="Type your markdown here..."># Hello World</textarea>
+                    <div id="markdownPreview"></div>
+                </div>
+            </div>
+
+            <!-- Code Formatter -->
+            <div class="tool-card">
+                <h3>JSON Formatter</h3>
+                <p>Format and validate JSON data</p>
+                <div class="tool-interface">
+                    <textarea id="jsonInput" placeholder='{"name": "example"}'>{"name":"test"}</textarea>
+                    <button onclick="formatJSON()">Format JSON</button>
+                    <pre id="jsonOutput"></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>E-Commerce Platform</h3>
+                <p>Full-stack online store with payment processing</p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Task Management App</h3>
+                <p>Real-time collaborative task manager</p>
+                <div class="tech-stack">
+                    <span>Vue.js</span>
+                    <span>Express</span>
+                    <span>Socket.io</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>API Dashboard</h3>
+                <p>Analytics dashboard for API monitoring</p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Python</span>
+                    <span>PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hire" class="hire-section">
+        <h2>Let's Work Together</h2>
+        <p>I'm available for freelance projects and full-time opportunities</p>
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>Email:</strong> survertimeoooo.com
+            </div>
+            <div class="contact-item">
+                <strong>GitHub:</strong> github.com/Danfullstacker
+            </div>
+        </div>
+        <button class="cta-button" onclick="location.href='mailto:your.email@domain.com'">Get In Touch</button>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
